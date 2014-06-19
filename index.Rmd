@@ -1,0 +1,122 @@
+---
+title       : gvisMotionChart Example
+subtitle    : checking encoding
+author      : hwhd
+job         : software tester
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Test repo
+
+The following slide contains a gvisMotionChart Example
+
+```{r setup, include=FALSE, echo=FALSE}
+# set global chunk options
+opts_chunk$set(cache=FALSE)
+opts_knit$set(message=FALSE)
+options(gvis.plot.tag="chart")
+packs <- c("slidify", "slidifyLibraries", "knitr", "plyr", "googleVis")
+lapply(packs, library, character.only = TRUE)
+```
+
+
+--- .class #id 
+
+## googleVis test
+
+```{r results="asis", echo=FALSE}
+
+temp.data <- structure(list(symv_no = c(".TOTAL_act", ".TOTAL_act", ".TOTAL_act", 
+".TOTAL_act", ".TOTAL_act", ".TOTAL_act", ".TOTAL_base", ".TOTAL_base", 
+".TOTAL_base", ".TOTAL_base", ".TOTAL_base", ".TOTAL_base", ".TOTAL_base", 
+".TOTAL_base", ".TOTAL_base", ".TOTAL_base", ".TOTAL_base", ".TOTAL_base", 
+".TOTAL_upd", ".TOTAL_upd", ".TOTAL_upd", ".TOTAL_upd", ".TOTAL_upd", 
+".TOTAL_upd", ".TOTAL_upd", ".TOTAL_upd", ".TOTAL_upd", ".TOTAL_upd", 
+".TOTAL_upd", ".TOTAL_upd", ".Δ.Ε.1_act", ".Δ.Ε.1_act", ".Δ.Ε.1_act", 
+".Δ.Ε.1_act", ".Δ.Ε.1_act", ".Δ.Ε.1_act", ".Δ.Ε.1_base", ".Δ.Ε.1_base", 
+".Δ.Ε.1_base", ".Δ.Ε.1_base", ".Δ.Ε.1_base", ".Δ.Ε.1_base", ".Δ.Ε.1_base", 
+".Δ.Ε.1_base", ".Δ.Ε.1_base", ".Δ.Ε.1_base", ".Δ.Ε.1_base", ".Δ.Ε.1_base", 
+".Δ.Ε.1_upd", ".Δ.Ε.1_upd", ".Δ.Ε.1_upd", ".Δ.Ε.1_upd", ".Δ.Ε.1_upd", 
+".Δ.Ε.1_upd", ".Δ.Ε.1_upd", ".Δ.Ε.1_upd", ".Δ.Ε.1_upd", ".Δ.Ε.1_upd", 
+".Δ.Ε.1_upd", ".Δ.Ε.1_upd", ".Δ.Ε.2_act", ".Δ.Ε.2_act", ".Δ.Ε.2_act", 
+".Δ.Ε.2_act", ".Δ.Ε.2_base", ".Δ.Ε.2_base", ".Δ.Ε.2_base", ".Δ.Ε.2_base", 
+".Δ.Ε.2_base", ".Δ.Ε.2_base", ".Δ.Ε.2_base", ".Δ.Ε.2_base", ".Δ.Ε.2_base", 
+".Δ.Ε.2_base", ".Δ.Ε.2_base", ".Δ.Ε.2_upd", ".Δ.Ε.2_upd", ".Δ.Ε.2_upd", 
+".Δ.Ε.2_upd", ".Δ.Ε.2_upd", ".Δ.Ε.2_upd", ".Δ.Ε.2_upd", ".Δ.Ε.2_upd", 
+".Δ.Ε.2_upd", ".Δ.Ε.2_upd", ".Δ.Ε.2_upd"), trans_date = structure(c(16071, 
+16102, 16130, 16161, 16191, 16222, 16071, 16102, 16130, 16161, 
+16191, 16222, 16252, 16283, 16314, 16344, 16375, 16405, 16071, 
+16102, 16130, 16161, 16191, 16222, 16252, 16283, 16314, 16344, 
+16375, 16405, 16071, 16102, 16130, 16161, 16191, 16222, 16071, 
+16102, 16130, 16161, 16191, 16222, 16252, 16283, 16314, 16344, 
+16375, 16405, 16071, 16102, 16130, 16161, 16191, 16222, 16252, 
+16283, 16314, 16344, 16375, 16405, 16102, 16130, 16161, 16222, 
+16102, 16130, 16161, 16191, 16222, 16252, 16283, 16314, 16344, 
+16375, 16405, 16102, 16130, 16161, 16191, 16222, 16252, 16283, 
+16314, 16344, 16375, 16405), class = "Date"), sum_month_poso = c(420.09, 
+5521.02, 4880.33, 9313.16, 3214.67, 7330.56, 522.68, 10202, 18900, 
+25027.1, 24956.42, 23259, 32743, 37226, 32697, 32258, 31336.67, 
+36135.81, 420.09, 5521.02, 4880.33, 21864.45, 22428, 25528.14, 
+32267, 35114, 29271, 34687, 35180.47, 40182.3, 420.09, 2083.13, 
+3323.45, 4513.96, 3214.67, 131.19, 522.68, 2795, 5271, 6505.4, 
+8176.24, 8621, 11867, 15650, 18371, 17850, 18150, 18315.52, 420.09, 
+2083.13, 3323.45, 3671, 5500, 8426.44, 10867, 12650, 14671, 18867, 
+17500, 19636.16, 3437.89, 1556.88, 4799.2, 7199.37, 7407, 13629, 
+18521.7, 16780.18, 14638, 20876, 21576, 14326, 14408, 13186.67, 
+17820.29, 3437.89, 1556.88, 18193.45, 16928, 17101.7, 21400, 
+22464, 14600, 15820, 17680.47, 20546.14), type = c(1L, 1L, 1L, 
+1L, 1L, 1L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 1L, 
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 1L, 
+1L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 1L, 1L, 1L, 
+2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 1L, 1L, 1L, 1L, 0L, 0L, 0L, 
+0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 
+2L, 2L, 2L), graph = c("actual", "actual", "actual", "actual", 
+"actual", "actual", "baseline", "baseline", "baseline", "baseline", 
+"baseline", "baseline", "baseline", "baseline", "baseline", "baseline", 
+"baseline", "baseline", "update", "update", "update", "update", 
+"update", "update", "update", "update", "update", "update", "update", 
+"update", "actual", "actual", "actual", "actual", "actual", "actual", 
+"baseline", "baseline", "baseline", "baseline", "baseline", "baseline", 
+"baseline", "baseline", "baseline", "baseline", "baseline", "baseline", 
+"update", "update", "update", "update", "update", "update", "update", 
+"update", "update", "update", "update", "update", "actual", "actual", 
+"actual", "actual", "baseline", "baseline", "baseline", "baseline", 
+"baseline", "baseline", "baseline", "baseline", "baseline", "baseline", 
+"baseline", "update", "update", "update", "update", "update", 
+"update", "update", "update", "update", "update", "update"), 
+    cum_amount = c(420.09, 5941.11, 10821.44, 20134.6, 23349.27, 
+    30679.83, 522.68, 10724.68, 29624.68, 54651.78, 79608.2, 
+    102867.2, 135610.2, 172836.2, 205533.2, 237791.2, 269127.87, 
+    305263.68, 420.09, 5941.11, 10821.44, 32685.89, 55113.89, 
+    80642.03, 112909.03, 148023.03, 177294.03, 211981.03, 247161.5, 
+    287343.8, 420.09, 2503.22, 5826.67, 10340.63, 13555.3, 13686.49, 
+    522.68, 3317.68, 8588.68, 15094.08, 23270.32, 31891.32, 43758.32, 
+    59408.32, 77779.32, 95629.32, 113779.32, 132094.84, 420.09, 
+    2503.22, 5826.67, 9497.67, 14997.67, 23424.11, 34291.11, 
+    46941.11, 61612.11, 80479.11, 97979.11, 117615.27, 3437.89, 
+    4994.77, 9793.97, 16993.34, 7407, 21036, 39557.7, 56337.88, 
+    70975.88, 91851.88, 113427.88, 127753.88, 142161.88, 155348.55, 
+    173168.84, 3437.89, 4994.77, 23188.22, 40116.22, 57217.92, 
+    78617.92, 101081.92, 115681.92, 131501.92, 149182.39, 169728.53
+    )), .Names = c("symv_no", "trans_date", "sum_month_poso", 
+"type", "graph", "cum_amount"), row.names = c(NA, 86L), class = "data.frame")
+
+final.data <- data.frame(symv=temp.data$symv_no,
+                         pist_date=temp.data$trans_date,
+                         "Χρηματοροές"=round(temp.data$sum_month_poso,0),
+                         "Αθρ.Χρηματοροές"=round(temp.data$cum_amount,0),
+                         "Γράφημα"=temp.data$type,
+                         stringsAsFactors=F)
+
+M <- gvisMotionChart(final.data, idvar="symv", timevar="pist_date", options=list(displayAnnotations=F,
+          state='{"iconKeySettings":[{"key":{"dim0":".TOTAL_act"}},{"key":{"dim0":".TOTAL_base"}},{"key":{"dim0":".TOTAL_upd"}}],"iconType":"LINE","colorOption":"4","nonSelectedAlpha":0};',
+     legendPosition='newRow',width=1126*.814, height=675*.814, showChartButtons=T))
+
+print(M, "chart")
+
+```
