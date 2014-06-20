@@ -1,6 +1,7 @@
 base
 brew
 car
+devtools
 fBasics
 Formula
 ggplot2

@@ -7,7 +7,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+mode        : standalone    # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
@@ -23,14 +23,14 @@ The following slide contains a gvisMotionChart Example
 ## googleVis test
 
 <!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
-<!-- Thu Jun 19 13:16:34 2014 -->
+<!-- Fri Jun 20 10:21:56 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID1e703c717f54 () {
+function gvisDataMotionChartID1af845d6f9 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -639,16 +639,16 @@ new Date(2014,11,1),
 ];
 data.addColumn('string','symv');
 data.addColumn('date','pist_date');
-data.addColumn('number','Î.Ï.Î.Î¼Î.Ï.Î¿Ï.Î¿Î.Ï.');
-data.addColumn('number','Î.Î¸Ï..Î.Ï.Î.Î¼Î.Ï.Î¿Ï.Î¿Î.Ï.');
-data.addColumn('number','Î.Ï.Î.Ï.Î.Î¼Î.');
+data.addColumn('number','Î§ÏÎ·Î¼Î±Ï„Î¿ÏÎ¿Î­Ï‚');
+data.addColumn('number','Î‘Î¸Ï.Î§ÏÎ·Î¼Î±Ï„Î¿ÏÎ¿Î­Ï‚');
+data.addColumn('number','Î“ÏÎ¬Ï†Î·Î¼Î±');
 data.addRows(datajson);
 return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID1e703c717f54() {
-var data = gvisDataMotionChartID1e703c717f54();
+function drawChartMotionChartID1af845d6f9() {
+var data = gvisDataMotionChartID1af845d6f9();
 var options = {};
 options["width"] = 916.56;
 options["height"] = 549.45;
@@ -658,7 +658,7 @@ options["legendPosition"] = "newRow";
 options["showChartButtons"] = true;
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID1e703c717f54')
+    document.getElementById('MotionChartID1af845d6f9')
     );
     chart.draw(data,options);
     
@@ -682,9 +682,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID1e703c717f54);
+callbacks.push(drawChartMotionChartID1af845d6f9);
 })();
-function displayChartMotionChartID1e703c717f54() {
+function displayChartMotionChartID1af845d6f9() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -708,10 +708,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1e703c717f54"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1af845d6f9"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID1e703c717f54"
+<div id="MotionChartID1af845d6f9"
   style="width: 916.564px; height: 549.45px;">
 </div>
+
