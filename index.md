@@ -7,7 +7,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : standalone    # {standalone, draft}
+mode        : selfcontained    # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
@@ -24,14 +24,14 @@ The following slide contains a gvisMotionChart Example
 ## googleVis test
 
 <!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
-<!-- Fri Jun 20 10:50:03 2014 -->
+<!-- Fri Jun 20 12:03:03 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID1af828c434ea () {
+function gvisDataMotionChartID78844e37da1 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -648,8 +648,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID1af828c434ea() {
-var data = gvisDataMotionChartID1af828c434ea();
+function drawChartMotionChartID78844e37da1() {
+var data = gvisDataMotionChartID78844e37da1();
 var options = {};
 options["width"] = 916.56;
 options["height"] = 549.45;
@@ -659,7 +659,7 @@ options["legendPosition"] = "newRow";
 options["showChartButtons"] = true;
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID1af828c434ea')
+    document.getElementById('MotionChartID78844e37da1')
     );
     chart.draw(data,options);
     
@@ -683,9 +683,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID1af828c434ea);
+callbacks.push(drawChartMotionChartID78844e37da1);
 })();
-function displayChartMotionChartID1af828c434ea() {
+function displayChartMotionChartID78844e37da1() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -709,11 +709,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1af828c434ea"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID78844e37da1"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID1af828c434ea"
+<div id="MotionChartID78844e37da1"
   style="width: 916.564px; height: 549.45px;">
 </div>
 
