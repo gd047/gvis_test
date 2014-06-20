@@ -14,6 +14,7 @@ knit        : slidify::knit2slides
 ## Test repo
 
 The following slide contains a gvisMotionChart Example
+στο οποίο εμφανίζονται σωστά οι ελληνικοί χαρακτήρες.
 
 
 
@@ -23,14 +24,14 @@ The following slide contains a gvisMotionChart Example
 ## googleVis test
 
 <!-- MotionChart generated in R 3.1.0 by googleVis 0.5.2 package -->
-<!-- Fri Jun 20 10:21:56 2014 -->
+<!-- Fri Jun 20 10:50:03 2014 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID1af845d6f9 () {
+function gvisDataMotionChartID1af828c434ea () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -647,8 +648,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID1af845d6f9() {
-var data = gvisDataMotionChartID1af845d6f9();
+function drawChartMotionChartID1af828c434ea() {
+var data = gvisDataMotionChartID1af828c434ea();
 var options = {};
 options["width"] = 916.56;
 options["height"] = 549.45;
@@ -658,7 +659,7 @@ options["legendPosition"] = "newRow";
 options["showChartButtons"] = true;
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID1af845d6f9')
+    document.getElementById('MotionChartID1af828c434ea')
     );
     chart.draw(data,options);
     
@@ -682,9 +683,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID1af845d6f9);
+callbacks.push(drawChartMotionChartID1af828c434ea);
 })();
-function displayChartMotionChartID1af845d6f9() {
+function displayChartMotionChartID1af828c434ea() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -708,11 +709,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1af845d6f9"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1af828c434ea"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID1af845d6f9"
+<div id="MotionChartID1af828c434ea"
   style="width: 916.564px; height: 549.45px;">
 </div>
 
